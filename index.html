@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Averlet — Error Tracking, Coming Soon</title>
+  <meta name="description"
+    content="A new start for error tracking. Read messages, exceptions, and stack frames together. Averlet is coming soon.">
+  <link rel="canonical" href="https://averlet.dev/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Averlet">
+  <meta property="og:url" content="https://averlet.dev/">
+  <meta property="og:title" content="Averlet — Error Tracking, Coming Soon">
+  <meta property="og:description"
+    content="A new start for error tracking. Read messages, exceptions, and stack frames together. Averlet is coming soon.">
+  <meta property="og:image" content="https://averlet.dev/assets/averlet-social-meta.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Averlet — Every error has a story. Error tracking for developers, coming soon.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@averlet_">
+  <meta name="twitter:title" content="Averlet — Error Tracking, Coming Soon">
+  <meta name="twitter:description"
+    content="A new start for error tracking. Read messages, exceptions, and stack frames together. Averlet is coming soon.">
+  <meta name="twitter:image" content="https://averlet.dev/assets/averlet-social-meta.png">
+  <meta name="twitter:image:alt"
+    content="Averlet — Every error has a story. Error tracking for developers, coming soon.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InstrumentSans-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://averlet.dev/#organization",
+          "name": "Averlet",
+          "url": "https://averlet.dev/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://averlet.dev/assets/logo.svg"
+          },
+          "description": "Averlet builds developer tools, starting with error tracking.",
+          "sameAs": ["https://github.com/Averlet", "https://x.com/averlet_"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://averlet.dev/#website",
+          "name": "Averlet",
+          "url": "https://averlet.dev/",
+          "description": "A new start for error tracking. Read messages, exceptions, and stack frames together. Averlet is coming soon.",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://averlet.dev/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://averlet.dev/#software",
+          "name": "Averlet",
+          "url": "https://averlet.dev/",
+          "description": "Error tracking that lets you read messages, exceptions, and stack frames together.",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Web",
+          "image": "https://averlet.dev/assets/averlet-social-meta.png",
+          "publisher": { "@id": "https://averlet.dev/#organization" }
+        }
+      ]
+    }
+  </script>
+  <script src="signup.js" defer></script>
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="page">
+      <header class="site-header">
+        <img class="brand" src="assets/logo.svg" width="175" height="56" alt="Averlet">
+        <p class="launch-status">Coming soon</p>
+      </header>
+
+      <main class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A new start for error tracking</p>
+          <h1>Every error<br>has a story.</h1>
+          <p class="description">We’re building Averlet to help you read messages, exceptions, and stack frames
+            together. Understand what happened. Start with the evidence.</p>
+
+          <form class="signup" id="signup" method="post" aria-describedby="signup-note">
+            <p class="signup-heading">Be there for the first chapter.</p>
+            <div class="signup-controls">
+              <label class="visually-hidden" for="email">Your email address</label>
+              <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email"
+                inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required>
+              <button type="submit" disabled>
+                Notify me
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+            <div class="visually-hidden" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p class="signup-note" id="signup-note">A launch notification. No noise.</p>
+            <p class="signup-status" id="signup-status" role="status" aria-live="polite" aria-atomic="true"></p>
+            <noscript>
+              <p class="signup-note">Email signup isn’t available yet. Please check back soon.</p>
+            </noscript>
+          </form>
+        </div>
+
+        <div class="hero-visual">
+          <img class="evidence-art" src="assets/evidence.svg" width="600" height="450" alt="" aria-hidden="true">
+          <ol class="evidence-labels" aria-label="The evidence, together">
+            <li><span>01</span> Message</li>
+            <li><span>02</span> Exception</li>
+            <li><span>03</span> Stack frames</li>
+          </ol>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Averlet starts with error tracking.</p>
+        <nav class="footer-links" aria-label="Averlet elsewhere">
+          <a href="https://github.com/Averlet" rel="me">GitHub</a>
+          <a href="https://x.com/averlet_" rel="me">X</a>
+        </nav>
+        <p>Built with care. For developers.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
